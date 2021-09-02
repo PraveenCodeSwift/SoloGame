@@ -1,0 +1,6 @@
+framework module Pods_Solo_Games {
+  umbrella header "Pods-Solo-Games-umbrella.h"
+
+  export *
+  module * { export * }
+}
