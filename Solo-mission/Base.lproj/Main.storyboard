@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="NcT-du-KKA">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HVD_Comic_Serif_Pro.otf">
+            <string>HVDComicSerifPro</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="LYY-EK-d1c">
+            <objects>
+                <tabBarController id="NcT-du-KKA" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="qbZ-uT-Qol">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" systemColor="viewFlipsideBackgroundColor"/>
+                        <color key="barTintColor" systemColor="viewFlipsideBackgroundColor"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="5iO-3g-PTY" kind="relationship" relationship="viewControllers" id="qF9-qa-RhC"/>
+                        <segue destination="Qx8-qD-9ue" kind="relationship" relationship="viewControllers" id="ylX-iH-CIr"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qhs-zb-9lF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1188" y="15"/>
+        </scene>
+        <!--Add + 1-->
+        <scene sceneID="EFl-HF-UKn">
+            <objects>
+                <viewController id="Qx8-qD-9ue" customClass="Add1ViewController" customModule="Solo_Games" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="WZu-gC-TZR"/>
+                        <viewControllerLayoutGuide type="bottom" id="MGt-oR-W2e"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Z1X-iG-ZxC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="addgamebackground" translatesAutoresizingMaskIntoConstraints="NO" id="h7s-1P-6hF">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="score" translatesAutoresizingMaskIntoConstraints="NO" id="J3I-OW-q6C">
+                                <rect key="frame" x="20" y="70" width="149" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="J14-7T-dIJ"/>
+                                    <constraint firstAttribute="width" constant="149" id="epo-x3-JMb"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="time" translatesAutoresizingMaskIntoConstraints="NO" id="bu6-Og-YZS">
+                                <rect key="frame" x="254" y="70" width="149" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="149" id="Tu2-kk-1fl"/>
+                                    <constraint firstAttribute="height" constant="50" id="Xjc-JO-Q5a"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="number" translatesAutoresizingMaskIntoConstraints="NO" id="AXH-Cj-FXs">
+                                <rect key="frame" x="56" y="140" width="302" height="129"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="129" id="aT8-ms-eRe"/>
+                                    <constraint firstAttribute="width" constant="302" id="oJp-Tg-Tig"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1234" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Idp-dE-8zK">
+                                <rect key="frame" x="133" y="162.5" width="148.5" height="84"/>
+                                <fontDescription key="fontDescription" name="HVDComicSerifPro" family="HVD Comic Serif Pro" pointSize="70"/>
+                                <color key="textColor" red="0.45098039220000002" green="0.23921568630000001" blue="0.098039215690000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" background="input" translatesAutoresizingMaskIntoConstraints="NO" id="meO-Xy-jwA">
+                                <rect key="frame" x="79" y="288" width="256" height="110"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="256" id="DmY-8p-S7m"/>
+                                    <constraint firstAttribute="height" constant="110" id="fXo-oa-xhU"/>
+                                </constraints>
+                                <color key="textColor" red="0.34369188550000002" green="0.58053374290000004" blue="0.99866056439999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="HVDComicSerifPro" family="HVD Comic Serif Pro" pointSize="72"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add 1 to each of the digits. So, 1357 becomes 2468." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hTl-vR-cRC">
+                                <rect key="frame" x="63" y="747" width="295" height="43.5"/>
+                                <fontDescription key="fontDescription" name="HVDComicSerifPro" family="HVD Comic Serif Pro" pointSize="18"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1234" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="upH-83-lg9">
+                                <rect key="frame" x="63" y="85" width="47" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="vD9-04-EqO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HVDComicSerifPro" family="HVD Comic Serif Pro" pointSize="22"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:10" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zq2-1v-zzS">
+                                <rect key="frame" x="286" y="85" width="57.5" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="YiQ-50-ftK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HVDComicSerifPro" family="HVD Comic Serif Pro" pointSize="22"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="J3I-OW-q6C" firstAttribute="leading" secondItem="Z1X-iG-ZxC" secondAttribute="leadingMargin" id="21Z-jz-Kga"/>
+                            <constraint firstAttribute="trailing" secondItem="bu6-Og-YZS" secondAttribute="trailing" constant="11" id="7hK-Id-FC7"/>
+                            <constraint firstItem="hTl-vR-cRC" firstAttribute="leading" secondItem="Z1X-iG-ZxC" secondAttribute="leadingMargin" constant="43" id="CEN-Gn-FIX"/>
+                            <constraint firstItem="J3I-OW-q6C" firstAttribute="top" secondItem="WZu-gC-TZR" secondAttribute="bottom" constant="26" id="EOO-vI-qX7"/>
+                            <constraint firstItem="MGt-oR-W2e" firstAttribute="top" secondItem="hTl-vR-cRC" secondAttribute="bottom" constant="22.5" id="Evm-Dx-j3a"/>
+                            <constraint firstItem="Idp-dE-8zK" firstAttribute="centerX" secondItem="AXH-Cj-FXs" secondAttribute="centerX" id="JTR-gz-PnK"/>
+                            <constraint firstAttribute="leading" secondItem="h7s-1P-6hF" secondAttribute="leading" id="LlA-wy-3HN"/>
+                            <constraint firstItem="MGt-oR-W2e" firstAttribute="top" secondItem="h7s-1P-6hF" secondAttribute="bottom" id="M2k-bz-X8J"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="zq2-1v-zzS" secondAttribute="trailing" constant="50.5" id="PBg-XQ-JI4"/>
+                            <constraint firstItem="upH-83-lg9" firstAttribute="top" secondItem="WZu-gC-TZR" secondAttribute="bottom" constant="41" id="Qhe-U4-dK3"/>
+                            <constraint firstItem="AXH-Cj-FXs" firstAttribute="centerX" secondItem="h7s-1P-6hF" secondAttribute="centerX" id="bN9-6U-ZPr"/>
+                            <constraint firstItem="AXH-Cj-FXs" firstAttribute="top" secondItem="J3I-OW-q6C" secondAttribute="bottom" constant="20" id="cF0-Ya-tZA"/>
+                            <constraint firstAttribute="trailing" secondItem="h7s-1P-6hF" secondAttribute="trailing" id="eL9-ud-peN"/>
+                            <constraint firstItem="upH-83-lg9" firstAttribute="leading" secondItem="Z1X-iG-ZxC" secondAttribute="leadingMargin" constant="43" id="fnd-b2-m5W"/>
+                            <constraint firstItem="meO-Xy-jwA" firstAttribute="top" secondItem="AXH-Cj-FXs" secondAttribute="bottom" constant="19" id="hcE-vb-KgJ"/>
+                            <constraint firstItem="bu6-Og-YZS" firstAttribute="top" secondItem="WZu-gC-TZR" secondAttribute="bottom" constant="26" id="kcJ-aC-RrB"/>
+                            <constraint firstItem="Idp-dE-8zK" firstAttribute="centerY" secondItem="AXH-Cj-FXs" secondAttribute="centerY" id="o8A-2f-A2s"/>
+                            <constraint firstItem="h7s-1P-6hF" firstAttribute="top" secondItem="Z1X-iG-ZxC" secondAttribute="top" id="oQm-PA-y0X"/>
+                            <constraint firstItem="meO-Xy-jwA" firstAttribute="centerX" secondItem="AXH-Cj-FXs" secondAttribute="centerX" id="per-Od-vBe"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="hTl-vR-cRC" secondAttribute="trailing" constant="36" id="sVm-Z3-MCA"/>
+                            <constraint firstItem="zq2-1v-zzS" firstAttribute="top" secondItem="WZu-gC-TZR" secondAttribute="bottom" constant="41" id="zZ5-ci-3k2"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Add + 1" image="add1" id="4Uy-di-YoO"/>
+                    <navigationItem key="navigationItem" id="CJZ-OO-AEs"/>
+                    <connections>
+                        <outlet property="inputField" destination="meO-Xy-jwA" id="NUZ-HJ-YTF"/>
+                        <outlet property="numbersLabel" destination="Idp-dE-8zK" id="OiH-fl-dzj"/>
+                        <outlet property="scoreLabel" destination="upH-83-lg9" id="Mrd-zg-iGM"/>
+                        <outlet property="timeLabel" destination="zq2-1v-zzS" id="9hK-UX-dsD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lIl-AF-fw8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="311.59420289855075" y="-319.41964285714283"/>
+        </scene>
+        <!--Stick Hiro-->
+        <scene sceneID="UVL-zn-gBb">
+            <objects>
+                <viewController id="5iO-3g-PTY" customClass="StickHiroGameViewController" customModule="Solo_Games" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8fE-vt-WMh"/>
+                        <viewControllerLayoutGuide type="bottom" id="xmI-jZ-QGr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="L6J-at-cWf" customClass="SKView">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Stick Hiro" image="stick-hiro" id="7iA-7n-k9z"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GVA-c6-IaX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-343" y="-310"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="add1" width="15" height="25"/>
+        <image name="addgamebackground" width="375" height="667"/>
+        <image name="input" width="256" height="109.5"/>
+        <image name="number" width="302.5" height="129"/>
+        <image name="score" width="149" height="50.5"/>
+        <image name="stick-hiro" width="32" height="32"/>
+        <image name="time" width="149" height="50.5"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="viewFlipsideBackgroundColor">
+            <color red="0.1215686274509804" green="0.12941176470588239" blue="0.14117647058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
